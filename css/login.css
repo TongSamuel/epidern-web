@@ -1,0 +1,53 @@
+
+/*Bouton login*/
+
+.modal{
+  display:block;  
+  transform: translateY(-100%);
+  transition:1s;
+}
+  .modale{
+   color:gray; 
+   transform: translateY(0%);
+   
+  }
+  .modale-off{
+    animation:1s fade2 1 ;
+
+  }
+  .modal .modal-body{
+    text-align: left;
+  }
+  .modal .modal-header{
+    background: linear-gradient(white, white, rgba(150, 134, 243, 0.1));
+    color:#0c3264;
+    
+  }
+
+  .modal .modal-header h5{
+    text-align: center;
+    margin-left:20%;
+  }
+  .label{
+float:left;
+  }
+
+
+  @keyframes fade{
+    0%{
+      transform: translateY(-100%);
+    }
+    100%{
+      transform: translateY(0%);
+    }
+  }
+
+
+  @keyframes fade2{
+    0%{
+      transform: translateY(0%);
+    }
+    100%{
+      transform: translateY(-100%);
+    }
+  }
