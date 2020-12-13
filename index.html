@@ -10,20 +10,26 @@
     <link rel="stylesheet" href="css/login.css">
 
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"defer  ></script>
+    <link rel="stylesheet" type="text/css" href="css/style_map.css" />
+    <script src="js/index.js"></script>
     <title>Epidern-web</title>
   </head>
   <body>
     <!--Main Navigation-->
     <header>
         <img class="image-front" src="images/image-traitee.jpg" alt="">
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+  <nav class="navbar  navbar-expand-lg navbar-dark pink scrolling-navbar">
     <a class="navbar-brand titre" href="#"><strong>epidern</strong><p>Cholera</p></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
@@ -57,10 +63,125 @@
     Connexion
 </div>
     </header>
-    <div id="root">
-      
+
+    <div class="bloc-presentation">
+      <div class="titre1">Avec <font style="color:rgb(217, 118, 236);">Epidern</font> la surveillance du choléra devient aisée</div>
+
+      <div class="services">
+        <div class="path">
+          <div class="head">
+            <img src="images/image6-review.png" alt="">
+          </div>
+          <div class="foot">    
+            <h3>                  Une surveillance sanitaire absolue            </h3>
+        <p>Avec nos outils de géolocalisation, et nos équipes d'investigation, nous vous assurons une surveillance absolue et en temps réel sur le terrain</p>
+          </div>
+        </div>
+        <div class="path">
+          <div class="head">
+            <img src="images/image7.jpg" alt="">
+          </div>
+          <div class="foot">
+            <h3>            Une prise en charge rapide            </h3>
+          <p>Nous assurons une prise en charge rapide et immédiate, après détection d'un nouveau; ainsi qu'un suivi tout au long du traitement de la maladie</p>
+          </div>
+        </div>
+        <div class="path">
+          <div class="head">
+            <img src="images/image4.jpg" alt="">
+          </div>
+          <div class="foot">
+            <h3>            Des équipes d'experts            </h3>
+          <p>Nous disposons d'équipes d'experts qui se chargeront de toutes les analyses et les estimations pour contenir la maladie et eviter sa propagation</p>
+          </div>
+        </div>
+      </div>
     </div>
-<!--Main Navigation-->
+
+    <div class="container-fluid new-case">
+      <img src="images/image1.jpg" alt="">
+      <a href="#"><div class="bouton-cas">Signaler un nouveau cas</div></a>
+    </div>
+    <br><br><br>
+    <div class="sensibilisation">
+<div class="part1">
+  <div class="titre2">Quels sont les <font style="color:rgb(217, 118, 236);">Symptômes</font> du choléra ?</div>
+<br>
+  <div class="contenu">
+  <div class="elem img">
+    <img src="images/image5-review.png" alt="">
+  </div>
+  <div class="elem symptome">
+          <div class="elem2">
+              <div class="li"><img src="images/img-diarrhée.jpg" alt=""></div>
+              <div class="li text">
+                Diarrhée aqueuse abondante, mais sans douleur (selles riziformes)
+              </div>
+          </div>
+          <div class="elem2">
+            <div class="li"><img src="images/img-vomis.jpg" alt=""></div>
+            <div class="li text">
+              Vomissements de liquide clair           
+             </div>
+        </div>
+        <div class="elem2">
+          <div class="li"><img src="images/img-chaud.jpg" alt=""></div>
+          <div class="li text">
+            
+            Déshydratation entraînant une chute de la pression sanguine
+                    </div>
+      </div>
+      <div class="elem2">
+        <div class="li"><img src="images/img-collapsus.jpg" alt=""></div>
+        <div class="li text">
+         collapsus ou Chute subite des forces avec ralentissement des fonctions vitales 
+    </div>
+    
+          
+
+  </div>
+</div>
+</div>
+    </div><br>
+    <div class="part2">
+      <div class="titre2">Quelles sont les mesures de prévention  du choléra ?</div>
+
+      	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+  <br><br>
+  <div class="elem3 image">
+    <img src="images/image-sensib.jpg" alt="">
+    <p>Suivez à la lettre les mesures de prévention</p>
+  </div>
+          <div id="wowslider-container1" class="slider elem3" style="margin-left:20vh">
+	<div class="ws_images"><ul>
+		<li><img src="data1/images/img_1.jpg" alt="Lavez vous régulièrement lles mains à l'eau courante" title="Lavez vous régulièrement lles mains à l'eau courante" id="wows1_0"/></li>
+		<li><img src="data1/images/img_1_0.jpg" alt="Boire de l'eau potable" title="Boire de l'eau potable" id="wows1_1"/></li>
+		<li><img src="data1/images/img_2.jpg" alt="Boire de l'eau courante" title="Boire de l'eau courante" id="wows1_2"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/img_3.jpg" alt="jquery slideshow" title="Désinfetez régulièrement vos maisons" id="wows1_3"/></a></li>
+		<li><img src="data1/images/img_4.jpg" alt="Désinectez vos habits surtout quand vous revenez chez vous" title="Désinectez vos habits surtout quand vous revenez chez vous" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Lavez vous régulièrement lles mains à l'eau courante"><span><img src="data1/tooltips/img_1.jpg" alt="Lavez vous régulièrement lles mains à l'eau courante"/>1</span></a>
+		<a href="#" title="Boire de l'eau potable"><span><img src="data1/tooltips/img_1_0.jpg" alt="Boire de l'eau potable"/>2</span></a>
+		<a href="#" title="Boire de l'eau courante"><span><img src="data1/tooltips/img_2.jpg" alt="Boire de l'eau courante"/>3</span></a>
+		<a href="#" title="Désinfetez régulièrement vos maisons"><span><img src="data1/tooltips/img_3.jpg" alt="Désinfetez régulièrement vos maisons"/>4</span></a>
+		<a href="#" title="Désinectez vos habits surtout quand vous revenez chez vous"><span><img src="data1/tooltips/img_4.jpg" alt="Désinectez vos habits surtout quand vous revenez chez vous"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">html slider</a> by WOWSlider.com v8.8</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+
+  
+</div>
+  </div>
+<!--
+  <div id="map" class="map">
+
+  </div>
+
+Main Navigation-->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <!--<div id="root"></div>
     
